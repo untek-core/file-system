@@ -1,0 +1,59 @@
+[
+    {
+        "type": "directory",
+        "items": [
+            {
+                "type": "file",
+                "size": 4,
+                "name": "action.json"
+            },
+            {
+                "type": "file",
+                "size": 4,
+                "name": "main.json"
+            },
+            {
+                "type": "file",
+                "size": 4,
+                "name": "message.json"
+            },
+            {
+                "type": "file",
+                "size": 5,
+                "name": "status.json"
+            }
+        ],
+        "name": "kz"
+    },
+    {
+        "type": "directory",
+        "items": [
+            {
+                "type": "file",
+                "size": 4,
+                "name": "action.json"
+            },
+            {
+                "type": "file",
+                "size": 4,
+                "name": "domain.json"
+            },
+            {
+                "type": "file",
+                "size": 4,
+                "name": "main.json"
+            },
+            {
+                "type": "file",
+                "size": 4,
+                "name": "message.json"
+            },
+            {
+                "type": "file",
+                "size": 4,
+                "name": "status.json"
+            }
+        ],
+        "name": "ru"
+    }
+]
