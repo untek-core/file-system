@@ -23,7 +23,7 @@ class FilePathHelper
 
     public static function prepareRootPath($path)
     {
-        $rootDir = __DIR__ . '/../../../../../../gate.vea';
+        $rootDir = __DIR__ . '/../../../../..';
         $path = str_replace('\\', '/', $path);
         if ($path[0] == '/') {
             return $rootDir . $path;
