@@ -35,7 +35,10 @@ class FindFileHelper
         if (!FileStorageHelper::has($dir)) {
             return [];
         }
-        $pathList = scandir($dir);
+        $pathList = @scandir($dir);
+        if(empty($pathList)) {
+            return [];
+        }
         ArrayHelper::removeByValue('.', $pathList);
         ArrayHelper::removeByValue('..', $pathList);
         if (empty($pathList)) {
