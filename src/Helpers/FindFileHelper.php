@@ -51,6 +51,12 @@ class FindFileHelper
         return $pathList;
     }
 
+    /**
+     * @param $dir
+     * @param null $options
+     * @return Collection | FileEntity[] | DirectoryEntity[]
+     * @throws \Exception
+     */
     public static function scanDirTree($dir, $options = null)
     {
         $collection = new Collection();
