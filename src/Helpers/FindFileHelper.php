@@ -32,9 +32,9 @@ class FindFileHelper
 
     public static function scanDir($dir, $options = null)
     {
-        if (!FileStorageHelper::has($dir)) {
+        /*if (!FileStorageHelper::has($dir)) {
             return [];
-        }
+        }*/
         $pathList = @scandir($dir);
         if(empty($pathList)) {
             return [];
