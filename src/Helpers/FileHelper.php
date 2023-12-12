@@ -353,6 +353,21 @@ class FileHelper
         return $list;
     }
 
+    public static function list($dir) {
+        $dir = self::clearDir($dir);
+        $list = [];
+        $handle = self::openDir($dir);
+        while (($file = readdir($handle)) !== false) {
+            if ($file === '.' || $file === '..') {
+                continue;
+            }
+            $list[] = $file;
+        }
+        closedir($handle);
+
+        return $list;
+    }
+
     /**
      * Checks if the given file path satisfies the filtering options.
      * @param string $path the path of the file or directory to be checked
