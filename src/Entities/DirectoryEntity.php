@@ -2,6 +2,8 @@
 
 namespace Untek\Core\FileSystem\Entities;
 
+use Untek\Core\Collection\Libs\Collection;
+
 class DirectoryEntity extends BaseEntity
 {
 
@@ -12,6 +14,9 @@ class DirectoryEntity extends BaseEntity
         return self::TYPE_DIRECTORY;
     }
 
+    /**
+     * @return null | Collection
+     */
     public function getItems()
     {
         return $this->items;
