@@ -15,7 +15,7 @@ class DirectoryEntity extends BaseEntity
     }
 
     /**
-     * @return null | Collection
+     * @return null | Collection | FileEntity[]|DirectoryEntity[]
      */
     public function getItems()
     {
